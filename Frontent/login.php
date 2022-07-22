@@ -1,3 +1,38 @@
+<?php
+  session_start();
+  $wrongInfo = false;
+  $conn = oci_connect('IPFT', 'IPFT', 'localhost/xe')
+  or die(oci_error());
+
+  if(!$conn){
+    echo "not connected";
+  }else{
+    if($_SERVER['REQUEST_METHOD']=='POST'){
+      $username = $_POST['username'];
+      $password = $_POST['password'];
+      $_SESSION['uname']= $username;
+      $_SESSION['profile'] = $username;      
+      $sql = "select * from dealer_info natural join info where dealer_id='$username' and password='$password'";
+      $stid=oci_parse($conn, $sql);
+      $r=oci_execute($stid);
+      $row= oci_fetch_array($stid, OCI_ASSOC + OCI_RETURN_NULLS);
+      if($row==NULL){
+        $sql = "select * from admin where username= '$username' and password= '$password'";
+        $stid=oci_parse($conn, $sql);
+        $r=oci_execute($stid);
+        $row= oci_fetch_array($stid, OCI_ASSOC + OCI_RETURN_NULLS);
+        if($row!=NULL){
+          header("Location: admin.php");
+        }else{
+          $wrongInfo=true;
+        }
+      }else{
+        header("Location: dealer2.php");
+      }
+    }
+  }
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -102,60 +137,12 @@
       </div>
     </header>
     <!-- End Header -->
-
-    <!-- ======= Hero Section ======= -->
-    <!-- <section id="hero" class="d-flex align-items-center justify-content-center">
-    <div class="container" data-aos="fade-up">
-
-      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
-        <div class="col-xl-6 col-lg-8">
-          <h1>Individual Physical Fitness Test<span>.</span></h1>
-          <h2> Military and Government</h2>
-        </div>
-      </div>
-
-      <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
-        <div class="col-xl-2 col-md-4">
-          <div class="icon-box">
-            <i class="ri-store-line"></i>
-            <h3><a href="">Lorem Ipsum</a></h3>
-          </div>
-        </div>
-        <div class="col-xl-2 col-md-4">
-          <div class="icon-box">
-            <i class="ri-bar-chart-box-line"></i>
-            <h3><a href="">Dolor Sitema</a></h3>
-          </div>
-        </div>
-        <div class="col-xl-2 col-md-4">
-          <div class="icon-box">
-            <i class="ri-calendar-todo-line"></i>
-            <h3><a href="">Sedare Perspiciatis</a></h3>
-          </div>
-        </div>
-        <div class="col-xl-2 col-md-4">
-          <div class="icon-box">
-            <i class="ri-paint-brush-line"></i>
-            <h3><a href="">Magni Dolores</a></h3>
-          </div>
-        </div>
-        <div class="col-xl-2 col-md-4">
-          <div class="icon-box">
-            <i class="ri-database-2-line"></i>
-            <h3><a href="">Nemos Enimade</a></h3>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section> -->
-
     <main id="main">
       <!-- ======= Contact Section ======= -->
       <section id="contact" class="contact mt-5">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
-            <h2>Login</h2>
+            <h2>IPFT</h2>
             <p>LOG IN</p>
           </div>
 
