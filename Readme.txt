@@ -1,6 +1,4 @@
-Thanks for downloading this template!
-
-Template Name: Gp
-Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+IPFT-training ground
+A Website with data base.......ORACLE
+An website of IPFT which is made by using a templete named Gp and its linkhttps://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
+Author: MD RIFAT ISLAM
