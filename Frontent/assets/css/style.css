@@ -14,12 +14,12 @@ body {
 }
 
 a {
-  color: #ffc451;
+  color: #007c00;
   text-decoration: none;
 }
 
 a:hover {
-  color: #ffd584;
+  color: #00e41e;
   text-decoration: none;
 }
 
@@ -42,7 +42,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #ffc451;
+  background: #00a31b;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -60,7 +60,7 @@ h6 {
 }
 
 .back-to-top:hover i {
-  color: #ffc451;
+  color: #00e41e;
 }
 
 .back-to-top.active {
@@ -87,7 +87,7 @@ h6 {
   position: fixed;
   top: calc(50% - 0px);
   left: calc(50% - 30px);
-  border: 6px solid #ffc451;
+  border: 6px solid #00e41e;
   border-top-color: #151515;
   border-bottom-color: #151515;
   border-radius: 50%;
@@ -134,7 +134,9 @@ h6 {
   z-index: 997;
   padding: 15px 0;
 }
-
+.aaa{
+  background-color: #007c00;
+}
 #header.header-scrolled,
 #header.header-inner-pages {
   background: rgba(0, 0, 0, 0.8);
@@ -155,7 +157,7 @@ h6 {
 }
 
 #header .logo a span {
-  color: #ffc451;
+  color: #59f74b;
 }
 
 #header .logo img {
@@ -173,11 +175,11 @@ h6 {
   transition: 0.3s;
   font-size: 14px;
   display: inline-block;
-  border: 2px solid #ffc451;
+  border: 2px solid #00e41e;
 }
 
 .get-started-btn:hover {
-  background: #ffbb38;
+  background: #00e41e;
   color: #343a40;
 }
 
@@ -234,7 +236,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #ffc451;
+  color: #00e41e;
 }
 
 .navbar .dropdown ul {
@@ -271,7 +273,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  background-color: #ffc451;
+  background-color: #00e41e;
 }
 
 .navbar .dropdown:hover>ul {
@@ -367,7 +369,7 @@ h6 {
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
   color: #151515;
-  background-color: #ffc451;
+  background-color: #00e41e;
 }
 
 .navbar-mobile .getstarted,
@@ -403,7 +405,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  background-color: #ffc451;
+  background-color: #00e41e;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -447,7 +449,7 @@ h6 {
 }
 
 #hero h1 span {
-  color: #ffc451;
+  color: #88ff51;
 }
 
 #hero h2 {
@@ -467,7 +469,7 @@ h6 {
 #hero .icon-box i {
   font-size: 32px;
   line-height: 1;
-  color: #ffc451;
+  color: #00e41e;
 }
 
 #hero .icon-box h3 {
@@ -485,11 +487,11 @@ h6 {
 }
 
 #hero .icon-box h3 a:hover {
-  color: #ffc451;
+  color: #00e41e;
 }
 
 #hero .icon-box:hover {
-  border-color: #ffc451;
+  border-color: #00e41e;
 }
 
 @media (min-width: 1024px) {
@@ -543,7 +545,7 @@ section {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #ffde9e;
+  background: #baff9e;
   margin: 4px 10px;
 }
 
@@ -581,7 +583,7 @@ section {
   font-size: 20px;
   left: 0;
   top: -3px;
-  color: #ffc451;
+  color: #00e41e;
 }
 
 .about .content p:last-child {
@@ -620,7 +622,7 @@ section {
 }
 
 .clients .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #ffc451;
+  background-color: #00e41e;
 }
 
 /*--------------------------------------------------------------
@@ -643,7 +645,7 @@ section {
 .features .icon-box i {
   font-size: 48px;
   float: left;
-  color: #ffc451;
+  color: #00e41e;
 }
 
 .features .icon-box p {
@@ -674,7 +676,7 @@ section {
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: #ffc451;
+  background: #00e41e;
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -701,7 +703,7 @@ section {
 }
 
 .services .icon-box h4 a:hover {
-  color: #ffc451;
+  color: #00e41e;
 }
 
 .services .icon-box p {
@@ -750,8 +752,8 @@ section {
 }
 
 .cta .cta-btn:hover {
-  background: #ffc451;
-  border-color: #ffc451;
+  background: #00e41e;
+  border-color: #00e41e;
   color: #151515;
 }
 
@@ -786,7 +788,7 @@ section {
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
   color: #151515;
-  background: #ffc451;
+  background: #00e41e;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -899,11 +901,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #ffc451;
+  border: 1px solid #00e41e;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #ffc451;
+  background-color: #00e41e;
 }
 
 .portfolio-details .portfolio-info {
@@ -1118,7 +1120,7 @@ section {
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #ffc451;
+  background-color: #00e41e;
   opacity: 1;
 }
 
@@ -1182,7 +1184,7 @@ section {
 
 .team .member .social a:hover {
   color: #151515;
-  background: #ffc451;
+  background: #00e41e;
 }
 
 .team .member .social i {
@@ -1230,7 +1232,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  background: #ffc451;
+  background: #00e41e;
   color: #151515;
   float: left;
   width: 44px;
@@ -1323,7 +1325,7 @@ section {
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: #ffc451;
+  border-color: #00e41e;
 }
 
 .contact .php-email-form input {
@@ -1335,7 +1337,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #ffc451;
+  background: #00e41e;
   border: 0;
   padding: 10px 24px;
   color: #151515;
@@ -1344,7 +1346,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #ffcd6b;
+  background: #77ff6b;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1501,7 +1503,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #ffc451;
+  color: #00e41e;
   font-size: 18px;
   line-height: 1;
 }
@@ -1524,7 +1526,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #ffc451;
+  color: #00e41e;
 }
 
 #footer .footer-top .footer-newsletter form {
@@ -1550,14 +1552,14 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #ffc451;
+  background: #00e41e;
   color: #151515;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
 }
 
 #footer .footer-top .footer-newsletter form input[type=submit]:hover {
-  background: #ffcd6b;
+  background: #6bff77;
 }
 
 #footer .copyright {
