@@ -122,21 +122,20 @@ if (!$conn) {
 
                 <div class="row mt-5">
                     <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
-                        <div class="col-xl-4 col-md-4 border border-success">
+                        <!-- <div class="col-xl-4 col-md-4 border border-success">
                             <a href=""><div class="icon-box">
-                                <!-- <i class="openmoji-military-medal"></i> -->
                                 <span class="iconify" data-icon="openmoji:military-medal"></span>
                                 <h3>Add Officer</h3>
                             </div></a>
-                        </div>
-                        <div class="col-xl-4 col-md-4 border border-success">
-                            <a href=""><div class="icon-box">
+                        </div> -->
+                        <div class="col-xl-6 col-md-4 border border-success">
+                            <a href="addSoldier.php"><div class="icon-box">
                                 <!-- <i class="twemoji-military-helmet"></i> -->
                                 <span class="iconify" data-icon="twemoji:military-helmet"></span>
                                 <h3>Add Soldier</h3>
                             </div></a>
                         </div>
-                        <div class="col-xl-4 col-md-4 border border-success">
+                        <div class="col-xl-6 col-md-4 border border-success">
                             <a href=""><div class="icon-box">
                                 <!-- <i class="ri-paint-brush-line"></i> -->
                                 <span class="iconify" data-icon="carbon:navaid-military"></span>
