@@ -11,8 +11,8 @@ if (!$conn) {
     if (isset($_POST["submit"])) {
       $username = $_POST['username'];
       $password = $_POST['password'];
-      
-      $_SESSION['uname']= $password;
+
+      $_SESSION['uname'] = $password;
 
       $sql = "select * from soldier where lower(name)=lower('$username') and SOLDIER_NO='$password'";
       $stid = oci_parse($conn, $sql);
@@ -136,20 +136,21 @@ if (!$conn) {
 
 
           <div class="col-lg-12 mt-5 mt-lg-0">
-            <form action="login.php" method="post" role="form" >   <!-- class="php-email-form" -->
+            <form action="login.php" method="post" role="form">
+              <!-- class="php-email-form" -->
               <div class="text-center form-group mt-3">
-                <input type="text" class="form-control" name="username" id="username" placeholder="username" required >
+                <input type="text" class="form-control" name="username" id="username" placeholder="username" required>
               </div>
               <div class="text-center form-group mt-3">
-                <input type="text" class="form-control" name="password" id="password" placeholder="password" required >
+                <input type="text" class="form-control" name="password" id="password" placeholder="password" required>
               </div>
 
               <!-- <div class="text-center">
                   <button type="submit">Login</button>
                 </div> -->
-                <!-- <div class="text-center"><button type="submit" class="btn btn-primary btn-block">Login</button></div> -->
-              <div class="text-center"><input class="mt-3"  type="submit" name="submit"></div>
-                
+              <!-- <div class="text-center"><button type="submit" class="btn btn-primary btn-block">Login</button></div> -->
+              <div class="text-center"><input class="mt-3" type="submit" name="submit"></div>
+
             </form>
           </div>
         </div>
@@ -161,16 +162,15 @@ if (!$conn) {
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-      <div class="container">
-        <div class="copyright">
-          &copy; Copyright <strong><span>IPFT</span></strong
-          >. All Rights Reserved
-        </div>
-        <div class="credits">
-          Designed for <a href="">Databaes Management system project</a>
-        </div>
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>IPFT</span></strong>. All Rights Reserved
       </div>
-    </footer>
+      <div class="credits">
+        Designed for <a href="">Databaes Management system project</a>
+      </div>
+    </div>
+  </footer>
   <!-- End Footer -->
 
   <div id="preloader"></div>

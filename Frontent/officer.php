@@ -136,7 +136,7 @@ if (!$conn) {
                             </div></a>
                         </div>
                         <div class="col-xl-6 col-md-4 border border-success">
-                            <a href=""><div class="icon-box">
+                            <a href="take_exam.php"><div class="icon-box">
                                 <!-- <i class="ri-paint-brush-line"></i> -->
                                 <span class="iconify" data-icon="carbon:navaid-military"></span>
                                 <h3>Take Exam </h3>

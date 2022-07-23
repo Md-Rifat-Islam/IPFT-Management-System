@@ -206,9 +206,9 @@ if (!$conn) {
                                         // $stid1 = oci_parse($conn, $sql);
                                         // oci_execute($stid1);
                                         // echo var_dump($raw["RESULT"]);
-
-                                        echo "<div class='container text-center pt-3'><h3> You have  " . $raw["RESULT"] . "ed in your " .
-                                            $raw["BIANNUAL"] . " annual exam of " . $biannual_d2 . "</h3> 
+                                        echo var_dump($raw['RESULT']);
+                                        echo "<div class='container text-center pt-3'><h3> You have  " . $raw['RESULT'] . "ed in your " .
+                                            $raw['BIANNUAL'] . " annual exam of " . $biannual_d2 . "</h3> 
                                             <br><br><h4><b>Failed Items</b></h4>
                                             <table class='table'>
                                             <thead>
