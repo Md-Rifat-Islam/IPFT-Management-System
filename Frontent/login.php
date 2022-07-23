@@ -147,8 +147,9 @@ if (!$conn) {
               <!-- <div class="text-center">
                   <button type="submit">Login</button>
                 </div> -->
-              <!-- <div class="text-center"><button type="submit" class="btn btn-primary btn-block">Login</button></div> -->
-              <input class="text-center mt-3"  type="submit" name="submit">
+                <!-- <div class="text-center"><button type="submit" class="btn btn-primary btn-block">Login</button></div> -->
+              <div class="text-center"><input class="mt-3"  type="submit" name="submit"></div>
+                
             </form>
           </div>
         </div>
